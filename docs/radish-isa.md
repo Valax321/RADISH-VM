@@ -40,9 +40,9 @@ Addressing modes (# = immediate, * = value of):
 | Code | Description |
 | ---- | ----------- |
 | IL | Immediate loads `LOAD r, #x` |
-| RL | Register-address loads `LOAD r, *[x + y]` |
+| RL | Register-address loads `LOAD r, *[x + #y]` |
 | IR | Immediate stores `STOR r, #x` |
-| RR | Register-address stores `STOR r, *[x + y]` |
+| RR | Register-address stores `STOR r, *[x + #y]` |
 | XM | Masked-immediate transfers `XFER y, [*x & #mask]` |
 | XR | Masked-register transfers `XFER y, [*x & *mask]` |
 
